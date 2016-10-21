@@ -8,5 +8,23 @@
    </style>
   </head>
   <body>
+   <div align="center">
+    <ul itemscope itemtype="http://remakenow.us/name" itemref="menu">
+     <font size="12">
+      <li><font color="#FF0000" itemprop="section" id="itemOne">Stocks</font></li>
+     </font>
+    </ul>
+   </div>
+   <div id="theBody"></div>
+   <script type="text/javascript">
+    var stockBody = "<div>";
+    stockBody += "<ul id='il'>";stockBody += "<p>";stockBody += "<li><a href='#topTen'>Top Ten</a></li>";stockBody += "</p>";stockBody += "</ul>";
+    stockBody += "<div id='topTen'>";stockBody += "</div>";
+    stockstockBody += "</div>";
+    document.getElementById("itemOne").addEventListener("click", showStock);
+    function showStock(){
+     document.getElementById("theBody").innerHTML = stockBody;
+    }
+   </script>
   </body>
  </html>
