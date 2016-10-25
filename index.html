@@ -12,10 +12,10 @@
    <div align="center">
     <ul id="il" itemscope itemtype="http://remakenow.us/name" itemref="menu">
      <font size="12">
-      <li><font color="#FF0000" itemprop="section" id="itemOne">Stocks</font></li>
-      <li><font color="#FF0000" itemprop="section" id="itemTwo">Coming Soon</font></li>
-      <li><font color="#FFFFFF" itemprop="section" id="itemThree">Planning</font></li>
-      <li><font color="#FFFFFF" itemprop="section" id="itemFour">Support</font></li>
+      <li><font color="#FF0000" itemprop="section" id="itemOne">Coming Soon|</font></li>
+      <li><font color="#FF0000" itemprop="section" id="itemTwo">Stocks|</font></li>
+      <li><font color="#FFFFFF" itemprop="section" id="itemThree">Planning|</font></li>
+      <li><font color="#FFFFFF" itemprop="section" id="itemFour">Support|</font></li>
      </font>
     </ul>
    </div>
@@ -31,13 +31,13 @@
     soonBody += "Coming Soon, in the following order of planning, and support more may come soon to follow.";
     soonBody += "</font>";
     soonBody += "</div>";
-    document.getElementById("itemOne").addEventListener("click", showStock);
-    function showStock(){
-     document.getElementById("theBody").innerHTML = stockBody;
-    }
-    document.getElementById("itemTwo").addEventListener("click", showSoon);
+    document.getElementById("itemOne").addEventListener("click", showSoon);
     function showSoon(){
-      document.getElementById("theBody").innerHTML = soonBody;
+     document.getElementById("theBody").innerHTML = soonBody;
+    }
+    document.getElementById("itemTwo").addEventListener("click", showStock);
+    function showStock(){
+      document.getElementById("theBody").innerHTML = stockBody;
     }
    </script>
   </body>
